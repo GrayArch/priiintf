@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 	int buff_ind = 0;
 
 	if (format == NULL)
-		return -1;
+		return (-1);
 
 	va_start(args, format);
 
@@ -41,13 +41,15 @@ int _printf(const char *format, ...)
 			int width = get_width(format, &i, args);
 			int precision = get_precision(format, &i, args);
 			int size = get_size(format, &i);
+
 			i++;
+
 			int printed = handle_print(format, &i, args, buffer,
 							flags, width, precision, size);
 			if (printed == -1)
 			{
 				va_end(args);
-				return -1;
+				return (-1);
 			}
 			printed_chars += printed;
 		}
@@ -57,7 +59,7 @@ int _printf(const char *format, ...)
 
 	va_end(args);
 
-	return printed_chars;
+	return (printed_chars);
 }
 
 /**
