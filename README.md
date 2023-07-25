@@ -54,5 +54,5 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
 
 AUTHORS
 This project is a collaboration between:
-#  **Dennis Muriithi**
-#  **Shadrack Kericho**
+#  **<a href="https://twitter.com/toor_ctrl" target="_blank">Dennis Muriithi</a>**
+#  **<a href="https://github.com/Shadihy" target="_blank">Shadrack Kericho</a>**
